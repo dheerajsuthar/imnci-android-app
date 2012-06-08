@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.dheeraj.imnci"
+    android:versionCode="3"
+    android:versionName="3.0" >
+
+    <uses-sdk android:minSdkVersion="4" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+     <uses-feature android:name="android.hardware.camera" />
+     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" 
+        android:name=".ImnciApplication">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="MotherRegistration"></activity>
+        <activity android:name="DatePickerTest"></activity>
+        <activity android:name="ANC02"></activity>
+        <activity android:name="ANC03"></activity>
+        <activity android:name="ANC04"></activity>
+        <activity android:name="DataEntryList"></activity><activity android:name="TT1"></activity>
+        
+        <activity android:name="TT2"></activity>
+        <activity android:name="TTB"></activity>
+        <activity android:name="IFA"></activity>
+        <activity android:name="PNC"></activity>
+        <activity android:name="Abortion"></activity>
+        <activity android:name="PO"></activity>
+        <activity android:name="TakePicture"></activity>
+        <activity android:name="ShowData"></activity>
+        <activity android:name="SharedPrefsActivity"></activity>
+        <service android:name="UpdaterService"></service>
+        <service android:name="GeoLocator"></service>
+    </application>
+
+</manifest>

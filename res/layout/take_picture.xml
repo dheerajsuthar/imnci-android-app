@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/takePicViewRoot" >
+
+    <ImageView
+        android:id="@+id/imagePic"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10sp"
+        android:layout_weight="0.88"
+        android:src="@drawable/ic_launcher" />
+    <Button 
+        android:id="@+id/buttonTakePic"
+        android:layout_width="80sp"
+        android:layout_height="40sp"
+        android:text="Take Photo"
+        android:layout_gravity="right|bottom"
+        />
+    <Spinner 
+        android:id="@+id/spinnerId"
+        android:layout_width="fill_parent"
+        android:layout_height="40sp"
+        android:layout_weight="0"
+ 
+        
+        />
+
+</LinearLayout>

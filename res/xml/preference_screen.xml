@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditTextPreference
+        android:defaultValue="http://218.248.13.224/cgi-bin/squealitor.py"
+        android:key="url"
+        android:summary="Enter the server address of the portal."
+        android:title="Server Address" />
+
+    <CheckBoxPreference
+        android:enabled="true"
+        android:key="internet"
+        android:summary="Allow the application to use internet."
+        android:title="Internet Connectivity" />
+    <CheckBoxPreference
+        android:enabled="true"
+        android:key="sms"
+        android:summary="Allow the application to use sms."
+        android:title="SMS usage" />
+
+    <EditTextPreference
+        android:defaultValue="3325"
+        android:key="smsno"
+        android:summary="SMS number of the portal."
+        android:title="SMS Number" />
+    <EditTextPreference
+        android:defaultValue="http://218.248.13.224/cgi-bin/updatemob.cgi"
+        android:key="locurl"
+        android:summary="URL for location Service so as to update ANM location"
+        android:title="URL for location Service" />
+
+    <CheckBoxPreference
+        android:key="gsm"
+        android:summary="Use GSM for Location Update, more accurate but time consuming."
+        android:title="Use GSM for Location Service" />
+
+    <EditTextPreference
+        android:key="updatesUrl"
+        android:summary="Enter the url for getting updates from server"
+        android:title="URL for fetching updates" 
+        android:defaultValue="http://218.248.13.224/cgi-bin/imnciupdates.py"
+        />
+
+</PreferenceScreen>
